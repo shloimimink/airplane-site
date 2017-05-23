@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shloimi's airplane site</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style></style>
+
+  <script>
+
+  function getWidth () {
+
+    var window_width = window.outerWidth;
+    var specsbox = document.getElementById ("specs");
+
+    specsbox.innerHTML = window_width;
+
+    console.log (window_width);
+
+  }
+
+  window.onload = getWidth;
+
+
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/jquery.cycle.all.min.js"></script>
+
+</head>
+<body onresize= "getWidth();" class="home-page">
+
+  <div id="specs"></div>
+
+  <div class="wrapper">
+
+    <header>
+      <h1>Shloimi's Commercial Airlines Site </h1>
+    </header>
+
+
+    <article>
+
+      <h2>The best site for airline infomation and photos </h2>
+
+
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">home<a/></li>
+            <li><a href="photos.html">photos<a/></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href ="contact.html">contact</a></li>
+            </ul>
+          </nav>
+
+
+
+          <div id="slideshow">
+            <img src="img/3661.jpg" class="main-img">
+            <img src="img/300.jpg"  class="main-img">
+            <img src="img/303.jpg"  class="main-img">
+            <img src="img/306.jpg"  class="main-img">
+          </div>
+
+
+          <p>There were 17,721 business jets in the worldwide fleet at the end of 2011 with about 70% of the fleet in North America. The European market is the next largest, with growing activity in the Middle East, Asia, and Central America. In 2014 the total airplane billing amounted to just over USD 22 billion and 722 business jets were delivered to customers across the globe.  </p>
+
+          <p>After World War II, commercial aviation grew rapidly, using mostly ex-military aircraft to transport people and cargo. This growth was accelerated by the glut of heavy and super-heavy bomber airframes like the B-29 and Avro Lancaster that could be converted into commercial aircraft. The DC-3 also made for easier and longer commercial flights. The first commercial jet airliner to fly was the British de Havilland Comet. By 1952, the British state airline BOAC had introduced the Comet into scheduled service. While a technical achievement, the plane suffered a series of highly public failures, as the shape of the windows led to cracks due to metal fatigue. The fatigue was caused by cycles of pressurization and depressurization of the cabin, and eventually led to catastrophic failure of the plane's fuselage. By the time the problems were overcome, other jet airliner designs had already taken to the skies.</p>
+        </article>
+
+        <aside>
+          <h5>
+            Boeing Commercial Airplanes: A Better Way To Fly.
+          </h5>
+
+          <p>
+            Boeing Commercial Airplanes is committed to being the leader in commercial aviation by offering airplanes and services that deliver superior design, efficiency and value to our customers and a superior flying experience to their customers. Today, there are more than 10,000 Boeing commercial jetliners in service; airplanes that fly farther on less fuel, airplanes that reduce airport noise and emissions, airplanes that provide passenger-preferred comfort while delivering superior bottom-line performance to operators. Leadership for today and tomorrow. That's a better way to fly.
+
+            Boeing Commercial Airplanes, a business unit of The Boeing Company, is headquartered in Seattle, Washington and employs more than 83,000 people worldwide.
+          </p>
+
+          <h5>
+            Airbus the highest standards of comfort
+          </h5>
+
+          <p>
+            Passenger comfort always is a priority for Airbus. Whether it involves advances in in-flight entertainment, offering the widest seats available or creating spacious and elegant interiors for every aircraft, Airbus understands the important role a relaxing environment plays in providing the best possible experience to passengers. Airbus is dedicated to designing the most comfortable cabins available on the market, including the unique interiors, social areas and enviable suites of the iconic A380, as well as the superior short-haul comfort of the A320 Family aircraft.
+          </p>
+
+        </aside>
+
+
+
+
+
+
+
+        <footer>
+          <small>copyright&copy; 2017</small>
+        </footer>
+
+      </div>
+
+
+
+      <script>
+
+      $('#slideshow').cycle({
+        fx: 'shuffle',
+        speed: 600,
+        timeout: 3000,
+      });
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>

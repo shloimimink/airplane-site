@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shloimi's airplane site</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+  </style>
+
+<script>
+
+function getWidth () {
+
+  var window_width = window.outerWidth;
+  var specsbox = document.getElementById ("specs");
+
+  specsbox.innerHTML = window_width;
+
+  console.log (window_width);
+
+}
+
+window.onload = getWidth;
+
+
+</script>
+
+
+</head>
+<body onresize= "getWidth();">
+
+  <div id="specs"></div>
+
+<div class="wrapper">
+
+  <header>
+<h1>Shloimi's Commercial Airlines Site </h1>
+  </header>
+
+
+<article>
+
+    <nav class="main-nav">
+<ul>
+  <li><a href="index.html">home<a/></li>
+  <li><a href="photos.html">photos<a/></li>
+  <li><a href="about.html">about</a></li>
+  <li><a href ="contact.html">contact</a></li>
+</ul>
+    </nav>
+
+<h2>about </h2>
+
+<p>
+My Name is Shloimi Minkowicz.
+I liked planes and still do since i was very little.
+i always likes to go see them taking off and landing.
+I love fliyng, and i always like finding out new infomation.
+as specially the new airbus A380.
+</p>
+
+
+
+
+
+
+
+<footer>
+    <small>copyright&copy; 2017</small>
+</footer>
+
+</div>
+
+
+</body>
+</html>

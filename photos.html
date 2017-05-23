@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shloimi's airplane site</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+<link rel="stylesheet" href="css/lightbox.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Latest compiled and minified CSS -->
+
+
+
+
+  <style>
+
+  * { box-sizing: border-box; }
+
+  /* force scrollbar */
+  html { overflow-y: scroll; }
+
+
+  /* ---- grid ---- */
+
+  .grid {
+    background: #fff;
+  }
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- .grid-item ---- */
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+    height: auto;
+  }
+
+  .grid-item {
+    float: left;
+    background: white;
+    border: 3px solid white;
+    border-radius: 0px;
+    position: relative;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+
+
+.grid-item .caption {
+  position: absolute;
+  width: 100%;
+  padding: .25em .5em;
+  bottom: 0em;
+  background: rgba(255, 255, 255, .7);
+  font-size: 16px;
+  line-height: 1.1em;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .grid-item .caption {
+    font-size: 14px;
+    line-height: 1em;
+  }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
+  </style>
+
+<script>
+
+function getWidth () {
+
+  var window_width = window.outerWidth;
+  var specsbox = document.getElementById ("specs");
+
+  specsbox.innerHTML = window_width;
+
+  console.log (window_width);
+
+}
+
+window.onload = getWidth;
+
+
+</script>
+
+
+</head>
+<body onresize= "getWidth();">
+
+  <div id="specs"></div>
+
+<div class="wrapper">
+
+  <header>
+<h1>Shloimi's Commercial Airlines Site </h1>
+  </header>
+
+  <nav class="main-nav">
+<ul>
+<li><a href="index.html">home<a/></li>
+<li><a href="photos.html">photos<a/></li>
+<li><a href="about.html">about</a></li>
+<li><a href ="contact.html">contact</a></li>
+</ul>
+  </nav>
+
+
+    <!-- Page Content -->
+    <div class="col-lg-12">
+        <h1 class="page-header">Gallery</h1>
+    </div>
+
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <div class="grid-item">
+            <a href="img/300.jpg" data-lightbox="300">
+            <img src="img/300.jpg" alt="">
+          </a>
+            <p class="caption">Interior of the Airbus A380.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/301.jpg" data-lightbox="301">
+            <img src="img/301.jpg" alt="">
+            <a/>
+            <p class="caption">Airbus A380 cockpit.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/302.jpg" data-lightbox="302">
+            <img src="img/302.jpg" alt="">
+          <a/>
+            <p class="caption">Airbus A380.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/303.jpg" data-lightbox="303">
+            <img src="img/303.jpg" alt="">
+            <a/>
+            <p class="caption">South African Airways A340.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/304.jpg" data-lightbox="304">
+            <img src="img/304.jpg" alt="">
+            <a/>
+            <p class="caption">Lufthansa A380.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/305.jpg" data-lightbox="305">
+            <img src="img/305.jpg" alt="">
+            <a/>
+            <p class="caption">Interior cabin of the Airbus A380.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/306.jpg" data-lightbox="306">
+            <img src="img/306.jpg" alt="">
+            <a/>
+            <p class="caption">Swiss Air Avro RJ100.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/307.jpg" data-lightbox="307">
+            <img src="img/307.jpg" alt="">
+            <a/>
+            <p class="caption">Cockpit of the A340.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/308.jpg" data-lightbox="308">
+            <img src="img/308.jpg" alt="">
+            <a/>
+            <p class="caption">Air force one boeing 747.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/309.jpg" data-lightbox="309">
+            <img src="img/309.jpg" alt="">
+            <a/>
+            <p class="caption">British Airways A380.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/310.jpg" data-lightbox="310">
+            <img src="img/310.jpg" alt="">
+            <a/>
+            <p class="caption">Lufthansa A340.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/311.jpg" data-lightbox="311">
+            <img src="img/311.jpg" alt="">
+            <a/>
+            <p class="caption">Finair MD11.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/312.jpg" data-lightbox="312">
+            <img src="img/312.jpg" alt="">
+            <a/>
+            <p class="caption">KLM MD11.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/313.jpg" data-lightbox="313">
+            <img src="img/313.jpg" alt="">
+            <a/>
+            <p class="caption">Air force one 747.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/314.jpg" data-lightbox="314">
+            <img src="img/314.jpg" alt="">
+            <a/>
+            <p class="caption">First class cabin of the A380.</p>
+          </div>
+          <div class="grid-item">
+            <a href="img/3661.jpg" data-lightbox="3661">
+            <img src="img/3661.jpg" alt="">
+            <a/>
+            <p class="caption">The Airbus A380.</p>
+          </div>
+        </div>
+
+
+
+    <footer>
+        <small>copyright&copy; 2017</small>
+    </footer>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src= "js/lightbox.min.js"></script>
+
+<script src= "js/masonry.pkgd.min.js"></script>
+
+<script src= "js/imagesloaded.pkgd.js"></script>
+
+
+<script>
+
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

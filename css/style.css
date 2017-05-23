@@ -1,0 +1,225 @@
+/*========GLOBAL STYLES===========*/
+
+body {
+  font: 1.2em arial;
+}
+
+*{
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*========CONTENT STYLES===========*/
+
+
+.wrapper{
+  width: 960px;
+  margin:15px auto;
+  border: 1px solid white;
+}
+
+header, footer {
+  padding: .75em;
+  background: lightblue;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+
+
+article {
+}
+
+aside {
+}
+
+
+
+.main-img {
+  width: 320px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+
+/*========NAV STYLES===========*/
+
+.main-nav ul {
+  width: 626px;
+  margin: 1em auto;
+  padding: 0;
+  border: 1px solid lightblue;
+  background-color: lightblue;
+}
+
+.home-page .main-nav ul {
+  float: right;
+}
+
+.main-nav li {
+  padding: 30px 0 10px 0px;
+  list-style: none;
+  display: inline;
+  margin-left: 80px;
+  margin-top: 30px;
+
+}
+
+
+.main-nav li a {
+  color: white;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.main-nav li a:hover {
+  color: #aaa;
+}
+
+
+
+
+
+
+/*========TYPOGRAPHY STYLES===========*/
+
+h2{
+  font-size: 25px;
+  color: darkorange;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  color: darkorange;
+  padding: .20em;
+}
+
+body {
+  background: white;
+}
+
+p {
+  font-size: 15px;
+  padding: .25em;
+  margin-top: 10px;
+}
+
+footer{
+  background: lightblue;
+  color: white;
+  clear: both;
+}
+
+
+/*  gallery  */
+
+.thumb {
+
+  float: left;
+  width: 25%;
+}
+
+.thumb img {
+
+  width: 100%;
+  padding: 5px;
+
+}
+
+
+/*========form styles========*/
+
+.contact-form {
+  width: 100%;
+  margin: 50px;
+}
+
+.contact-form input {
+  display: block;
+  width: 300px;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+
+/* ========== home page slideshow ================*/
+
+#slideshow {
+  float: left;
+}
+
+
+/* ========== MEDIA QUERIES ================*/
+
+
+@media screen and (max-width: 959px) {
+
+
+  body {
+    background: lightblue;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .main-nav ul {
+    width: 100%;
+    float: none;
+  }
+
+  .main-img {
+    clear: both;
+  }
+
+}
+
+
+
+@media screen and (max-width: 550px) {
+
+
+  .main-nav li {
+    padding: 10px 0 10px 0px;
+    list-style: none;
+    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+
+
+  /*  Gallery */
+
+  .thumb {
+    float: left;
+    width: 50%;
+  }
+
+
+
+
+
+}
+
+
+
+
+
+#specs {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background: red;
+  color: green;
+}
